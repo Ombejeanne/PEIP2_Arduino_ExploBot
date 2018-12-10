@@ -11,9 +11,9 @@
   
 * Je fais des recherches sur le moteur dont on aura besoin selon le poids de notre robot, en effet on veut ajouter de nombreuses fonctionnalités à notre robot dont on n’a pas encore défini certaines donc on ne connait pas encore son poids et on doit commencer à étudier les puissances de moteurs dont on pourrait avoir besoin :
 
-1. On s’est mit d’accord pour rester sur une base de 3 « fonctionnalités » : une caméra, de la lumière et un capteur de distance/d’obstacle.
+1. On s’est mit d’accord pour rester sur une base de 3 « fonctionnalités » (toutes dirigeables avec un servomoteur) : une caméra, de la lumière et un capteur de distance/d’obstacle.
 
 2. J’ai cherché sur robotshop.com un outil de dimensionnement de moteur : https://www.robotshop.com/community/blog/show/dimensionnement-dun-moteur-dentranement
 Je verrais la prochaine fois la dimension necessaire.
 
-* Je fais notre cahier des charges avec un tableau excel, 	je fais les recherches pour voir ce dont j'aurais besoin pour le support et le moteur de la voiture et je vois combien de temps chaque élément du projet va prendre et je le rajoute au CDC au fur et à mesure.
+* Je fais notre cahier des charges avec un tableau excel, je fais les recherches pour voir ce dont j'aurais besoin pour le support et le moteur de la voiture et je vois combien de temps chaque élément du projet va prendre et je le rajoute au CDC au fur et à mesure.
