@@ -1,6 +1,6 @@
-##Rapport Projet – Michele Bona#
+##Rapport Projet – Michele Bona
 
-#03/12/2018 – Premier jour :#
+#03/12/2018 – Premier jour :
 
 
 •	Notre groupe de projet est constitué de Michele Bona et Anthony Barna et on a aujourd’hui confirmé que notre projet sera l’ExploBot, une voiture « tout-terrain » (dans la mesure du possible) étudié pour explorer des grottes, des couloirs, les pyramides (avec lumières, caméra, détection d’obstacles, et autres à préciser plus tard).
