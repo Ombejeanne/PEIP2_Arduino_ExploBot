@@ -7,7 +7,7 @@
 
 * Je crée notre compte GitHub et lit le guide en ligne(https://guides.github.com/activities/hello-world/) pour bien comprendre comment on va s’organiser et on a récupéré une manette d’un ancien projet qui nous servira à diriger notre robot. Il faut par contre d’abord qu’on étudie comment elle marche, on a donc coupé et ressoudé les câbles de la manette qu’Anthony branchera sur sa carte Arduino pour étudier son fonctionnement.
 
-![Soudage cables](documents/images/ima.jpg)
+![Soudage cables, cf documents/images/ima.jpg](documents/images/ima.jpg)
   
 * Je fais des recherches sur le moteur dont on aura besoin selon le poids de notre robot, en effet on veut ajouter de nombreuses fonctionnalités à notre robot dont on n’a pas encore défini certaines donc on ne connait pas encore son poids et on doit commencer à étudier les puissances de moteurs dont on pourrait avoir besoin :
 
