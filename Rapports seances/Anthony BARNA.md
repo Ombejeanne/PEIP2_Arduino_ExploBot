@@ -12,4 +12,6 @@
 
 * Personnellement, mes recherches sont axées sur la caméra IP et la manette permettant de contrôler l’ExploBot.
 
-* Je soude des câbles sur une manette de Playstation 2 pour pouvoir l’utiliser avec l’arduino. Malheureusement cette dernière est défectueuse. J’en commande donc une nouvelle qui sera conforme (cf soudure1.jpg et soudure2.jpg).
+* Je soude des câbles sur une manette de Playstation 2 pour pouvoir l’utiliser avec l’arduino. Malheureusement cette dernière est défectueuse. J’en commande donc une nouvelle qui sera conforme.
+
+![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/soudure2.jpg)
