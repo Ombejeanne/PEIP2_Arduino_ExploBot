@@ -24,6 +24,6 @@
 * En attente de la livraison de la manette, je m'occupe de la gestion du servomoteur qui, servira à orienter notamment la caméra et le phare de l'ExploBot, le modèle choisi est le MG 996R de Tower Pro (cf 'documents/specs.md').
 Il sera temporairement commandé à l'aide d'un potentiomètre 5K.
 
-![alt text]()
+![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/servo1.jpg)
 
 * Nous récupérons un dispositif permettant la gestion de deux moteurs et du phare de l'ExploBot.
