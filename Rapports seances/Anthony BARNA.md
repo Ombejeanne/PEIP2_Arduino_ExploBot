@@ -28,3 +28,5 @@ Il sera temporairement commandé à l'aide d'un potentiomètre 5K.
 
 * Nous récupérons un dispositif permettant la gestion de deux moteurs et du phare de l'ExploBot : le L298N, un double pont en H tableau de commande d'entraînement de moteur à courant continu (cf 'documents/specs.md').
 
+* Commande d'une lampe LED pour faire le phare de l'ExploBot.
+
