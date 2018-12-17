@@ -26,4 +26,5 @@ Il sera temporairement commandé à l'aide d'un potentiomètre 5K.
 
 ![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/servo1.jpg)
 
-* Nous récupérons un dispositif permettant la gestion de deux moteurs et du phare de l'ExploBot.
+* Nous récupérons un dispositif permettant la gestion de deux moteurs et du phare de l'ExploBot : le L298N, un double pont en H tableau de commande d'entraînement de moteur à courant continu (cf 'documents/specs.md').
+
