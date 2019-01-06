@@ -13,7 +13,7 @@
 
 * Personnellement, mes recherches sont axées sur la caméra IP et la manette permettant de contrôler l’ExploBot.
 
-* Je soude des câbles sur une manette de Playstation 2 pour pouvoir l’utiliser avec l’arduino. Malheureusement cette dernière est défectueuse. J’en commande donc une nouvelle qui sera conforme.
+* Je soude des câbles sur une manette de Playstation 2 (Bigben) pour pouvoir l’utiliser avec l’arduino. Malheureusement cette dernière est défectueuse: j'utilise la librairie PS2X_lib.h disponible dans documents/codes, avec un exemple d'utilisation PS2X_Example.ino. Une fois les branchements effectués la librairie ne reconnaît pas le type de manette et de plus, il y a trop peu de documentation et de plans sur cette dernière pour pouvoir résoudre le problème. J’en commande donc une nouvelle (Dualshock) qui sera conforme et bien plus documentée/utilisée.
 
 ![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/soudure2.jpg)
 
