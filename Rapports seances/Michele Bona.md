@@ -17,3 +17,15 @@
 Je verrais la prochaine fois la dimension necessaire.
 
 * Je fais notre cahier des charges avec un tableau excel, je fais les recherches pour voir ce dont j'aurais besoin pour le support et le moteur de la voiture et je vois combien de temps chaque élément du projet va prendre et je le rajoute au CDC au fur et à mesure.
+
+
+## 17/12/2018 - Deuxième jour:
+
+
+* J'ai été malade toute la semaine du 17 et est donc fait mes recherches pendant les vacances et ai perdu mon cahier des charges que j'ai donc refait.
+
+* J'ai choisi les caracteristiques des moteurs nécessaire pour faire tourner nos roues en partant de l'idée que notre robot peserai au grand maximum 1kg (sachant que le servo pèse 55g, une pile de 12V environ 150g et en m'insiprant d'autres projets similaires). On cherche de plus à avoir un vehicule tout terrain, donc on sacrifie la vitesse maximale que j'ai estimé à 0.8 m/s et je choisi un assez grand rayon de roue (4cm). Et en prenant en plus en compte le fait  qu'on a 2 moteurs d'entrainement l'outil de dimensionnement de robotshop nous conseille un moteur avec un couplage de 0.1 Nm et de 2.2 W, ce qui me semble peu mais on peut dire que c'est un minimum et que plus de couplage ne nous fera pas de mal pour gravir des terrain compliqués.
+
+![documents/images/carac_moteur.png](Caractéristiques du moteur, cf documents/images/carac_moteur.png)
+
+* Pour les roues on veut des chenilles donc j'ai décidé de choisir 6 roues crantées de diamètre 4cm mais j'ai constaté qu'il faut que je sache la taille de l'axe moteur avant pour les choisir. Donc la semaine prochaine je vais commander les pièces nécessaires pour pouvoir choisir les dimensions du reste, l'ordre de choix est donc le suivant: moteur > axe moteur > roue crentées > batteries > toutes les pieces > chassis
