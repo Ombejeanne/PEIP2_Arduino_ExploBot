@@ -30,3 +30,14 @@ Il sera temporairement commandé à l'aide d'un potentiomètre 5K.
 
 * Commande d'une lampe LED pour faire le phare de l'ExploBot.
 
+## Compte rendu de la séance du 7 janvier 2019 :
+
+*Je fais des recherches avec Michele sur les moteurs, chassis et chenilles. Nous finissons par opter pour un kit préfait, les détails sont sur le rapport de Michele.
+
+*Je reçois la manette conforme, je fais les branchements et soudures nécessaires : 
+
+
+![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/branchement%20manette.jpg)
+
+Ainsi il faut brancher sur l'Arduino deux cables de commande qui communiquent entre la manette et les pins numériques, un cable qui correspondra à l'horloge, un qui va donner des informations sur les paquets de bytes envoyés et pour finir l'alimentation en 3.3V et la masse.
+
