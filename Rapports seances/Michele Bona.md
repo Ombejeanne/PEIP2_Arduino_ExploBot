@@ -47,6 +47,6 @@ https://www.ebay.fr/itm/A-FAIRE-SOI-MEME-RC-Smart-Robot-Tank-Sur-chenilles-Car-C
 
 * On voulait un chassis de 20cm fois 15cm environ et celui-ci est un peu plus grand, les carastéristiques des moteurs inclus sont bien compatibles avec la commande d'entraînement de moteur à courant continu L298N, le sytème de roues + chenilles est déjà installé, tout ça est parfait. Le seul soucis est que c'est un peu lourd mais les moteurs font 100tr/min et le robot complet ne devrait pas dépasser 1.5kg ont aura tout de même un excellent couplage.
 
-* Ceci étant fait j'ai commencé à réfléchir à la suite, j'ai vu comment je vais programmer les déplacement de notre robot et est fait le cahier des charges pour les semaines 5 à 9.
+* Ceci étant fait j'ai commencé à réfléchir à la suite, j'ai vu comment d'autres projets programmaient les déplacement de robot à chenilles et j'ai refait le cahier des charges proprement sur les 9 semaines.
 
 
