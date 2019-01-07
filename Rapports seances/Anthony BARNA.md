@@ -34,8 +34,9 @@ Il sera temporairement commandé à l'aide d'un potentiomètre 5K.
 
 * Je fais des recherches avec Michele sur les moteurs, chassis et chenilles. Nous finissons par opter pour un kit préfait, les détails sont sur le rapport de Michele.
 
-* Je reçois la manette conforme, je fais les branchements et soudures nécessaires : 
+* Je mets au point le code et les branchements du capteur de distance à ultrasons positionné sur le servomoteur, i lservira à scanner les environs pour rendre un graphique en 2D.
 
+* Je reçois la manette conforme, je fais les branchements et soudures nécessaires : 
 
 ![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/branchement%20manette.jpg)
 
