@@ -40,9 +40,13 @@ Je verrais la prochaine fois la dimension necessaire.
 
 * Jai fini par choisir ce modèle là: 
 ![cf https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/porjetARD.jpg](https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/porjetARD.jpg)
-Qui a les caractéristiques suivantes:
 ![https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/Capture_projARD.PNG](https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/Capture_projARD.PNG)
-Lien de la commande:
+
+
 https://www.ebay.fr/itm/A-FAIRE-SOI-MEME-RC-Smart-Robot-Tank-Sur-chenilles-Car-Chassis-Kit-avec-Crawler/282905756754?hash=item41de7f4452:g:lBsAAOSwt51avWzz:rk:2:pf:0
+
+* On voulait un chassis de 20cm fois 15cm environ et celui-ci est un peu plus grand, les carastéristiques des moteurs inclus sont bien compatibles avec la commande d'entraînement de moteur à courant continu L298N, le sytème de roues + chenilles est déjà installé, tout ça est parfait. Le seul soucis est que c'est un peu lourd mais les moteurs font 100tr/min et le robot complet ne devrait pas dépasser 1.5kg ont aura tout de même un excellent couplage.
+
+* Ceci étant fait j'ai commencé à réfléchir à la suite, j'ai vu comment je vais programmer les déplacement de notre robot et est fait le cahier des charges pour les semaines 5 à 9.
 
 
