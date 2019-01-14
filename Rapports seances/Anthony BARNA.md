@@ -54,6 +54,6 @@ Cela donne des informations, notamment sur la manière dont sont transmis les pa
 * En conclusion, la manette utilise une liaison Serial Peripheral Interface (SPI) où elle se comporte comme un slave et la carte arduino comme le master comme l'explique ce schéma : 
 ![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/SPI.png)
 
-* Il y a quatre fils connectés entre la manette et l'arduino: deux servent à l'échange de données entre l'arduino et la manette, un sert pour l'horloge et le dernier est le slave selecter (cf fil jaune sur le schéma). 
+* Il y a quatre fils connectés entre la manette et l'arduino: deux servent à l'échange de données entre l'arduino et la manette (MOSI et MISO), un sert pour l'horloge (SCK) et le dernier est le slave selecter (SS). 
 
 * Au démarrage, la manette envoie une 'signature' qui permettra de l'identifier, ensuite l'arduino impose une cadence de transfert de données puis des paquets de bytes se transmettent en suivant la cadence de l'horloge (le slave selecter va se mettre en valeur logique basse avant chaque réception de paquet). Ensuite, en analysant les bytes reçus (mis sous forme hexadécimale), on peut déterminer quelle commande a été actionnée. En ce qui concerne les joysticks analogiques, chaque axe d'un joystick renvoie des valeurs comprises entre 0 et 255 en fonction de sa position. Donc au repos les 4 axes (pour les deux joysticks) renvoie chacun la valeur 128. Cela permettra de contrôler les moteurs de manière précise.
