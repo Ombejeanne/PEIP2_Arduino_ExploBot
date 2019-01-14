@@ -59,3 +59,5 @@ Cela donne des informations, notamment sur la manière dont sont transmis les pa
 * Au démarrage, la manette envoie une 'signature' qui permettra de l'identifier, ensuite l'arduino impose une cadence de transfert de données puis des paquets de bytes se transmettent en suivant la cadence de l'horloge (le slave selecter va se mettre en valeur logique basse avant chaque réception de paquet). Ensuite, en analysant les bytes reçus (mis sous forme hexadécimale), on peut déterminer quelle commande a été actionnée. En ce qui concerne les joysticks analogiques, chaque axe d'un joystick renvoie des valeurs comprises entre 0 et 255 en fonction de sa position. Donc au repos les 4 axes (pour les deux joysticks) renvoie chacun la valeur 128. Cela permettra de contrôler les moteurs de manière précise.
 
 * Pour finir j'ai créé le code qui fait fonctionner le servomoteur avec la manette ainsi que la LED haute puissance, la vidéo est disponible [ici](https://youtu.be/iUmSV24hpvE). Je travaille maintenant sur la caméra IP pour pouvoir l'intégrer sur un support avec la LED, sur le servomoteur.
+
+* Le code sera régulièrement mis à jour dans le GitHub.
