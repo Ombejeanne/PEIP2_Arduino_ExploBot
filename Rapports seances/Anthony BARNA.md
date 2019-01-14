@@ -43,3 +43,17 @@ Il sera temporairement commandé à l'aide d'un potentiomètre 5K.
 * Ainsi il faut brancher sur l'Arduino deux cables de commande qui communiquent entre la manette et les pins numériques, un cable qui correspondra à l'horloge, un qui va donner des informations sur les paquets de bytes envoyés et pour finir l'alimentation en 3.3V et la masse.
 
 * Pour finir je mets au point le code pour gérer les commandes, qui sera à terminer et à optimiser sur les séances à venir. Je me sers de la librairie PS2X disponible sur le GitHub.
+
+
+## Compte rendu séance du 14 janvier 2019
+
+* La manette est enfin fonctionelle: j'ai étudié la librairie PS2X pour comprendre le fonctionnement du code. J'ai aussi passé les cables de la manette à l'oscilloscope :
+![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/oscilloscope%201.jpg)
+Cela donne des informations, notamment sur la manière dont sont transmis les paquets d'informations (à quelle fréquence, en fonction de quoi..).
+
+* En conclusion, la manette utilise une liaison Serial Peripheral Interface (SPI) où elle se comporte comme un slave et la carte arduino comme le master comme l'explique ce schéma : 
+![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/SPI.png)
+
+* Il y a quatre fils connectés entre la manette et l'arduino: deux servent à l'échange de données entre l'arduino et la manette, un sert pour l'horloge et le dernier est le slave selecter (cf fil jaune sur le schéma). 
+
+* Au démarrage, la manette envoie une 'signature' qui permettra de l'identifier, ensuite l'arduino impose une cadence de transfert de données puis des paquets de bytes se transmettent en suivant la cadence de l'horloge (le slave selecter va se mettre en valeur logique basse avant chaque réception de paquet). Ensuite, en analysant les bytes reçus (mis sous forme hexadécimale), on peut déterminer quelle commande a été actionnée. En ce qui concerne les joysticks analogiques, chaque axe d'un joystick renvoie des valeurs comprises entre 0 et 255 en fonction de sa position. Donc au repos les 4 axes (pour les deux joysticks) renvoie chacun la valeur 128. Cela permettra de contrôler les moteurs de manière précise.
