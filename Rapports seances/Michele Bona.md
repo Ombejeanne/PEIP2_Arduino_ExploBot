@@ -50,3 +50,16 @@ https://www.ebay.fr/itm/A-FAIRE-SOI-MEME-RC-Smart-Robot-Tank-Sur-chenilles-Car-C
 * Ceci étant fait j'ai commencé à réfléchir à la suite, j'ai vu comment d'autres projets programmaient les déplacement de robot à chenilles et j'ai refait le cahier des charges proprement sur les 9 semaines.
 
 
+## 14/01/2019 - Quatrième jour:
+
+
+* J'ai commencé le programme pour déplacer le robot, j'ai déjà fait le code de base qui permet de faire avancer les moteurs et je vais maintenant continuer pour faire avancer les moteurs selon la position d'un joystick que j'imagine codé sur 1 octet (donc avec des valeurs de 0 à 255 sur X,Y et la vitesse gérée par le deuxième joystick).
+
+* J'ai fait des graphiques représentant les valeurs des joysticks pour m'aider avec mon code:
+![cfhttps://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/ValeurJoy.png](https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/ValeurJoy.png)
+
+* J'ai décidé le mode de déplacement: le joystick gauche choisi la direction (avant, arriere, gauche, droite, arriere gauche,...) et le droit la vitesse (de la position au repos v=0 à la position completement en haut v=255). J'ai vu une vidéo d'un char controlé par ce système qui est très maniable et permet un très bon déplacement.
+
+* Pour faire un code le plus propre possible pour Anthony je m'y prends par étape, en commençant par le déplacement avant/arrière, et je crée des fonctions pour chaque déplacement pour que la loop soit la moins chargée possible et donc plus lisible. De plus un tel programme me permettra de rajouter des mouvements plus complexes facilement après avoir fait les bases du déplacement (tourner à l'arrêt, se retourner,...).
+
+* Finalement le code est très propre et lisible, le déplacement avant/arrière marche et j'ai commencer le déplacement sur 2 axes.
