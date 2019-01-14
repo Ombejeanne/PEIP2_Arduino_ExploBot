@@ -4,6 +4,7 @@
 
 * Toutes les images sont rangées dans 'documents/images'.
 * Les caractéristiques détaillées des composants du projet sont rangées dans 'documents/specs.md'
+* Tous les algorithmes sont rangés dans 'documents/codes'
 
 ## Compte rendu de la séance du 10 décembre 2018 :
 
