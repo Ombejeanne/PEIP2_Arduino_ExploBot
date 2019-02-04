@@ -62,3 +62,19 @@ Cela donne des informations, notamment sur la manière dont sont transmis les pa
 * Pour finir j'ai créé le code qui fait fonctionner le servomoteur avec la manette ainsi que la LED haute puissance, la vidéo est disponible [ici](https://youtu.be/iUmSV24hpvE). Je travaille maintenant sur la caméra IP pour pouvoir l'intégrer sur un support avec la LED, sur le servomoteur.
 
 * Le code sera régulièrement mis à jour dans le GitHub.
+
+## Compte rendu séance du 4 février 2019
+
+* Nous recevons le colis tant attendu : le chassis du char, les moteurs, les chenilles.. Nous pouvons enfin mettre notre travail en commun. 
+
+* Je commence les branchements des moteurs pour les faire marcher avec les josticks analogiques de la manette de PS2. 
+
+![alt text](https://scontent-mrs1-1.xx.fbcdn.net/v/t1.15752-9/51150461_392252168194172_1247527384890998784_n.jpg?_nc_cat=101&_nc_ht=scontent-mrs1-1.xx&oh=b534cfb33e1a8cf85e95a14a7493b954&oe=5CED568A)
+
+* Pendant ce temps, Michele monte le 'char', les moteurs seront disposés comme ceci: 
+
+![alt text](https://scontent-mrs1-1.xx.fbcdn.net/v/t1.15752-9/51178873_243762909885456_5320521704357756928_n.jpg?_nc_cat=101&_nc_ht=scontent-mrs1-1.xx&oh=ae04c628d8f99c4bcb07c0931f5c2388&oe=5CF20671)
+
+* Il y a encore un petit problème au niveau du moteur qui ne délivre pas sa pleine puissance, mais pour le reste, tout semble avancer de manière rassurante.
+
+* Cette séance a été en grande partie une séance de montage électronique et mécanique, il reste maintenant le code à développer entièrement pour pouvoir manier l'Explobot au mieux.
