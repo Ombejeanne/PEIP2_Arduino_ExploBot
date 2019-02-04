@@ -63,3 +63,20 @@ https://www.ebay.fr/itm/A-FAIRE-SOI-MEME-RC-Smart-Robot-Tank-Sur-chenilles-Car-C
 * Pour faire un code le plus propre possible pour Anthony je m'y prends par étape, en commençant par le déplacement avant/arrière, et je crée des fonctions pour chaque déplacement pour que la loop soit la moins chargée possible et donc plus lisible. De plus un tel programme me permettra de rajouter des mouvements plus complexes facilement après avoir fait les bases du déplacement (tourner à l'arrêt, se retourner,...).
 
 * Finalement le code est très propre et lisible, le déplacement avant/arrière marche et j'ai commencer le déplacement sur 2 axes.
+
+
+## 04/02/2019 - Cinquième jour:
+
+
+* On a reçu le char et je vais passer la séance à le monter, il n'y a pas de guide fourni avec donc je cherche un guide pour l'assemblage sur internet.
+
+![https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/assemblage.jpg](https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/assemblage.jpg)
+
+* J'ai trouvé une vidéo d'un particulier qui a monté le même modèle (https://www.youtube.com/watch?v=-9WLhvXwGhw) mais pas de réel guide donc je dois me débrouiller avec cette vidéo et les photos pour le montage mais c'est assez logique.
+
+* J'ai réussi à monter une roue et je sais comment monter les moteurs, donc il ne me reste plus qu'à les monter...
+![https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/roue.jpg](https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/roue.jpg)
+
+* J'ai monter toutes les roues, un moteur, une roue motrice et une chenille. Pour inserer la roue motrice dans l'axe moteur j'ai besoin de mettre de la colle car le système prévu dans le kit ne marche pas je ferais donc les deuxiemes roue motrice et chenille la prochaine séance.
+
+![https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/char.jpg](https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/char.jpg)
