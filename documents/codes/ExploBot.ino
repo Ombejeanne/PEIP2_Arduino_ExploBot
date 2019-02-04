@@ -1,21 +1,13 @@
 #include <PS2X_lib.h>  //for v1.6
 #include<Servo.h>
 
-#define PS2_DAT        2  // PB5 data brown résistance de 1K soudée  
-#define PS2_CMD        3  // PB3 command orange
-#define PS2_SEL        4  // PB2 attention yellow
-#define PS2_CLK        5  // PB4 clock blue
+//manette
+#define PS2_DAT        2  //  data brown résistance de 1K soudée  
+#define PS2_CMD        3  //  command orange
+#define PS2_SEL        4  //  attention yellow
+#define PS2_CLK        5  //  clock blue
 
-#define cmdServo 9 //PB1 angles relevés: 0 55 110
-Servo servo;
-int angle=90; //angle donné en paramètre au servomoteur
-
-#define lampe 6
-bool light=false;
-  
-//#define pressures   true
 #define pressures   false
-//#define rumble      true
 #define rumble      false
 
 PS2X ps2x; 
@@ -24,14 +16,52 @@ int error = 0;
 byte type = 0;
 byte vibrate = 0;
 
+//servomoteur
+#define cmdServo 9 //PB1 angles relevés: 0 55 110
+Servo servo;
+int angle=90; //angle donné en paramètre au servomoteur
+
+//lampe
+#define lampe 10
+bool light=false;
+
+//moteurs 
+#define ENA 6
+#define ENB 16
+#define IN1 12
+#define IN2 13
+#define IN3 14
+#define IN4 15
+
 void setup(){
 
+  //moteurs
+  pinMode(ENA,OUTPUT);
+  pinMode(ENB,OUTPUT);
+  
+  pinMode(IN1,OUTPUT);
+  pinMode(IN2,OUTPUT);
+  pinMode(IN3,OUTPUT);
+  pinMode(IN4,OUTPUT);
+
+  digitalWrite(ENA,LOW);
+  digitalWrite(ENB,LOW);
+
+ 
+  digitalWrite(IN1,HIGH);
+  digitalWrite(IN2,LOW);
+
+  
   //servo
   servo.attach(cmdServo);
+  
   //lampe
   pinMode(lampe,OUTPUT);
   digitalWrite(lampe,LOW);
- 
+  
+  
+  //manette
+  
   Serial.begin(57600);
   delay(300);  //pour laisser la manette se connecter
   error = ps2x.config_gamepad(PS2_CLK, PS2_CMD, PS2_SEL, PS2_DAT, pressures, rumble);
@@ -84,7 +114,8 @@ void loop() {
   //commandes servo
   servo.write(angle); //on passe l'angle en argument à chaque passage de boucle, on changera la valeur de angle pour faire bouger le servo
 
-
+  //moteurs
+  analogWrite(ENA, 255-ps2x.Analog(PSS_RY)); 
   
   if(error == 1) //skip loop if no controller found
     return; 
