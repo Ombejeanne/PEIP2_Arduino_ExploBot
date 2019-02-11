@@ -80,3 +80,15 @@ https://www.ebay.fr/itm/A-FAIRE-SOI-MEME-RC-Smart-Robot-Tank-Sur-chenilles-Car-C
 * J'ai monter toutes les roues, un moteur, une roue motrice et une chenille. Pour inserer la roue motrice dans l'axe moteur j'ai besoin de mettre de la colle car le système prévu dans le kit ne marche pas je ferais donc les deuxiemes roue motrice et chenille la prochaine séance.
 
 ![https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/char.jpg](https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/char.jpg)
+
+
+## 11/02/2019 - Sixième jour:
+
+* Je vais commencer par finir le char, j'ai commencé par ressouder un cable sur le moteur qui est tombé.
+
+* en attendant que Anthony finisse de tester les moteurs et la carte je décide de continuer le code de ses déplacements.
+
+* Le char est presque terminé, j'ai encore un probleme pour bloquer une piece sur l'axe moteur vu que le système prévu dans le kit ne tient pas du tout même en ajoutant de la colle sur la vis. Ducoup je vais essayer de mettre directement la colle sur l'axe, et si ça ne tient toujours pas j'irai au Fablab pour faire un trou dans l'axe moteur et y mettre une vis longue...
+![https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/axe%20moteur.jpg](https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/axe%20moteur.jpg)
+ 
+ * Ca ne marche toujours pas je vais donc au Fablab voir qu'elles solutions ils ont à me proposer.
