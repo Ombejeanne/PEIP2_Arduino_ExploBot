@@ -78,3 +78,14 @@ Cela donne des informations, notamment sur la manière dont sont transmis les pa
 * Il y a encore un petit problème au niveau du moteur qui ne délivre pas sa pleine puissance, mais pour le reste, tout semble avancer de manière rassurante.
 
 * Cette séance a été en grande partie une séance de montage électronique et mécanique, il reste maintenant le code à développer entièrement pour pouvoir manier l'Explobot au mieux.
+
+## Compte rendu séance du 11 février 2019
+
+* Cette séance est entièrement dédiée au code de l'Explobot. Michele me donne sa partie de code concernant les moteurs que j'intègre au code principal (disponible dans le GitHub, régulièrement mis à jour) pour qu'il fonctionne avec la manette. Pour mieux comprendre mon travail, voici un schéma de ce que renvoie un jostick :
+
+![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/sch%C3%A9maJoystick.png)
+
+* Ici l'axe X est bleu et l'axe Y est rouge, si on ne touche pas le jostick, les deux axes renvoient 128.
+
+* Le jostick droit sert à donner l'intensité au moteur, celui de gauche sert à donner la direction.
+
