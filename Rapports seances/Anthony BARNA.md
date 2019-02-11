@@ -89,3 +89,6 @@ Cela donne des informations, notamment sur la manière dont sont transmis les pa
 
 * Le jostick droit sert à donner l'intensité au moteur, celui de gauche sert à donner la direction.
 
+* Le code fonctionne correctement. En attendant une dernière retouche sur le chassis (fixation d'axe moteur) je commence à prévoir l'agencement du montage (cable management, vis, écrous, éventuelle plaque de bois..).
+
+* Nous pourrons commencer à monter l'ExploBot concrètement dès la prochaine séance.
