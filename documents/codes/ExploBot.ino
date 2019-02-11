@@ -33,6 +33,9 @@ bool light=false;
 #define IN3 14
 #define IN4 15
 
+int vitesseA; //vitesse des deux moteurs
+int vitesseB;
+
 void setup(){
 
   //moteurs
@@ -46,10 +49,6 @@ void setup(){
 
   digitalWrite(ENA,LOW);
   digitalWrite(ENB,LOW);
-
- 
-  digitalWrite(IN1,HIGH);
-  digitalWrite(IN2,LOW);
 
   
   //servo
@@ -78,9 +77,6 @@ void setup(){
     Serial.println("true)");
   else
     Serial.println("false");
-    Serial.println("Try out all the buttons, X will vibrate the controller, faster as you press harder;");
-    Serial.println("holding L1 or R1 will print out the analog stick values.");
-    Serial.println("Note: Go to www.billporter.info for updates and to report bugs.");
   }  
   else if(error == 1)
     Serial.println("No controller found, check wiring, see readme.txt to enable debug. visit www.billporter.info for troubleshooting tips");
@@ -115,36 +111,75 @@ void loop() {
   servo.write(angle); //on passe l'angle en argument à chaque passage de boucle, on changera la valeur de angle pour faire bouger le servo
 
   //moteurs
-  analogWrite(ENA, 255-ps2x.Analog(PSS_RY)); 
+  if(ps2x.Analog(PSS_RY)<=128){ //si on est en marche avant (on regarde le jostick droit sur l'axe Y)
+
+    //A avant
+    digitalWrite(IN1,HIGH);
+    digitalWrite(IN2,LOW);
+
+    //B avant
+    digitalWrite(IN3,LOW);
+    digitalWrite(IN4,HIGH);
+
+    //Marche avant le joystick va de 128 vers 0
+    vitesseA=map(ps2x.Analog(PSS_RY),128,0,0,255);
+    vitesseB=map(ps2x.Analog(PSS_RY),128,0,0,255);
+  }
+  else{ //si on est en marche arrière
+    //A arrière
+    digitalWrite(IN1,LOW);
+    digitalWrite(IN2,HIGH);
+
+    //B arrière
+    digitalWrite(IN3,HIGH);
+    digitalWrite(IN4,LOW);
+
+    //marche arrière le jostick va de 129 vers 255
+    vitesseA=map(ps2x.Analog(PSS_RY),129,255,0,255);
+    vitesseB=map(ps2x.Analog(PSS_RY),129,255,0,255);
+  }
+
+  if(ps2x.Analog(PSS_LX)<=128){ //tourner à gauche càd réduire la vitesse du moteur gauche
+    
+    vitesseA-=map(ps2x.Analog(PSS_LX),128,0,0,255);
+    
+    if(vitesseA<0){ //la vitesse doit rester à minimum 0
+      vitesseA=0;
+    }
+  }
+  else{ //tourner à droite càd réduire la vitesse du moteur droit
+    
+    vitesseB-=map(ps2x.Analog(PSS_LX),128,255,0,255);
+    
+    if(vitesseB<0){ //la vitesse doit rester à minimum 0
+      vitesseB=0;
+    }
+  }
+  
+  analogWrite(ENA, vitesseA); 
+  analogWrite(ENB, vitesseB);
+
+  Serial.print("A: ");
+  Serial.println(vitesseA);
+  Serial.print("B: ");
+  Serial.println(vitesseB);
   
   if(error == 1) //skip loop if no controller found
     return; 
   else { //DualShock Controller
-    ps2x.read_gamepad(false, vibrate); //read controller and set large motor to spin at 'vibrate' speed
-    
-    if(ps2x.Button(PSB_START))         //will be TRUE as long as button is pressed
-      Serial.println("Start is being held");
-    if(ps2x.Button(PSB_SELECT))
-      Serial.println("Select is being held");      
+    ps2x.read_gamepad(false, vibrate); //read controller and set large motor to spin at 'vibrate' speed   
 
     if(ps2x.Button(PSB_PAD_UP)) {      //will be TRUE as long as button is pressed
-      //Serial.print("Up held this hard: ");
-      //Serial.println(ps2x.Analog(PSAB_PAD_UP), DEC);
+
       angle=90; //on remet le servo à sa position initiale
     }
     if(ps2x.Button(PSB_PAD_RIGHT)){ //augmenter l'angle du servo
-      //Serial.print("Right held this hard: ");
-      //Serial.println(ps2x.Analog(PSAB_PAD_RIGHT), DEC);
+      
       angle+=10;
     }
     if(ps2x.Button(PSB_PAD_LEFT)){//baisser l'angle du servo
-      //Serial.print("LEFT held this hard: ");
-      //Serial.println(ps2x.Analog(PSAB_PAD_LEFT), DEC);
+      
       angle-=10;
-    }
-    if(ps2x.Button(PSB_PAD_DOWN)){
-      Serial.print("DOWN held this hard: ");
-      Serial.println(ps2x.Analog(PSAB_PAD_DOWN), DEC);
     }
 
     //pour rester avec un angle coimpris entre 0 et 180
@@ -157,16 +192,9 @@ void loop() {
 
     vibrate = ps2x.Analog(PSAB_CROSS);  //this will set the large motor vibrate speed based on how hard you press the blue (X) button
     if (ps2x.NewButtonState()) {        //will be TRUE if any button changes state (on to off, or off to on)
-      if(ps2x.Button(PSB_L3))
-        Serial.println("L3 pressed");
-      if(ps2x.Button(PSB_R3))
-        Serial.println("R3 pressed");
-      if(ps2x.Button(PSB_L2))
-        Serial.println("L2 pressed");
-      if(ps2x.Button(PSB_R2))
-        Serial.println("R2 pressed");
+      
       if(ps2x.Button(PSB_TRIANGLE))
-        //Serial.println("Triangle pressed");
+      
         if(light==false){
           digitalWrite(lampe,HIGH);
           light=true;
@@ -175,14 +203,7 @@ void loop() {
           digitalWrite(lampe,LOW);
           light=false;
         }
-    }
-
-    if(ps2x.ButtonPressed(PSB_CIRCLE))               //will be TRUE if button was JUST pressed
-      Serial.println("Circle just pressed");
-    if(ps2x.ButtonPressed(PSB_CROSS))               //will be TRUE if button was JUST pressed OR released
-      Serial.println("X just pressed");
-    if(ps2x.ButtonPressed(PSB_SQUARE))              //will be TRUE if button was JUST released
-      Serial.println("Square just pressed");     
+    }     
 
     if(ps2x.Button(PSB_L1) || ps2x.Button(PSB_R1)) { //print stick values if either is TRUE
       Serial.print("Stick Values:");
