@@ -92,3 +92,11 @@ Cela donne des informations, notamment sur la manière dont sont transmis les pa
 * Le code fonctionne correctement. En attendant une dernière retouche sur le chassis (fixation d'axe moteur) je commence à prévoir l'agencement du montage (cable management, vis, écrous, éventuelle plaque de bois..).
 
 * Nous pourrons commencer à monter l'ExploBot concrètement dès la prochaine séance.
+
+## Compte rendu séance du 25 février 2019
+
+* Aujourd'hui nous montons en partie l'ExploBot. Nous faisons des soudures, les finitions du code, le cable managment.. 
+
+* Voici une courte [vidéo](https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FKJUN-Gob8qw%3Ffbclid%3DIwAR1eGpQI2xFTQnhV1hlKM3nVFsLNu5_y9kutA6KZit-YHbofoGitM4g1mTw&h=AT2WfpAzhRxiHpDFNaCvjarttAML4TCD_0FxaemhZ1p-elKtKIgg1dm8Zp7bAd5aKo6JU0BSAc7wL_DCew_vSds-qBg9rdrCWuCCYfXlStw5wVy5HbCvTjzUn4ci0A) qui montre l'avancement (le montage reste expérimental). 
+
+* Il reste maintenant à finir de monter proprement les câbles et à créer les supports pour les différentes pièces (les cartes électroniques ne doivent pas avoir de contact direct avec le chassis pour éviter les courts circuits, un support pour le servomoteur, la caméra et la LED haute puissance qui sera de préférence en PVC).
