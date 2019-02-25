@@ -92,3 +92,13 @@ https://www.ebay.fr/itm/A-FAIRE-SOI-MEME-RC-Smart-Robot-Tank-Sur-chenilles-Car-C
 ![https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/axe%20moteur.jpg](https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/axe%20moteur.jpg)
  
  * Ca ne marche toujours pas je vais donc au Fablab voir qu'elles solutions ils ont à me proposer.
+
+
+## 25/02/2019 - Septième jour:
+
+
+* Le char est complet et solide et le code terminé, on va maintenant tester notre code pour déplacer le char.
+
+* Le code semble fonctionnel mais un seul moteur du char marche... On teste en changeant de câbles et de sens les moteurs mais le problème subsiste, on vérifie avec l'ocsilloscope et c'est les ports IN3 et IN4 qui restaient à 0. On final il étaient mit dans de mauvaise entrées sur l'arduino...
+
+* On installe maintenant tout sur le char (arduino et pont en H) et on gère les câbles au mieux. On a soudé les différentes masses ensemble et les différentes alim 3.3 V ensemble. 
