@@ -27,11 +27,11 @@ bool light=false;
 
 //moteurs 
 #define ENA 6
-#define ENB 16
+#define ENB 11
 #define IN1 12
 #define IN2 13
-#define IN3 14
-#define IN4 15
+#define IN3 7
+#define IN4 8
 
 int vitesseA; //vitesse des deux moteurs
 int vitesseB;
@@ -49,7 +49,6 @@ void setup(){
 
   digitalWrite(ENA,LOW);
   digitalWrite(ENB,LOW);
-
   
   //servo
   servo.attach(cmdServo);
@@ -159,10 +158,15 @@ void loop() {
   analogWrite(ENA, vitesseA); 
   analogWrite(ENB, vitesseB);
 
-  Serial.print("A: ");
-  Serial.println(vitesseA);
-  Serial.print("B: ");
-  Serial.println(vitesseB);
+  Serial.print("IN1: ");
+  Serial.println(digitalRead(IN1));
+  Serial.print("IN2: ");
+  Serial.println(digitalRead(IN2));
+
+  Serial.print("IN3: ");
+  Serial.println(digitalRead(14));
+  Serial.print("IN4: ");
+  Serial.println(digitalRead(15));
   
   if(error == 1) //skip loop if no controller found
     return; 
