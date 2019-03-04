@@ -102,3 +102,13 @@ https://www.ebay.fr/itm/A-FAIRE-SOI-MEME-RC-Smart-Robot-Tank-Sur-chenilles-Car-C
 * Le code semble fonctionnel mais un seul moteur du char marche... On teste en changeant de câbles et de sens les moteurs mais le problème subsiste, on vérifie avec l'ocsilloscope et c'est les ports IN3 et IN4 qui restaient à 0. On final il étaient mit dans de mauvaise entrées sur l'arduino...
 
 * On installe maintenant tout sur le char (arduino et pont en H) et on gère les câbles au mieux. On a soudé les différentes masses ensemble et les différentes alim 3.3 V ensemble. 
+
+
+## 04/03/2019 - Huitième jour:
+
+* Je crée le support en bois qu'on va fixé sur notre char.
+![https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/support.jpg](https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/support.jpg)
+
+* On a remplacé la carte pour une UNO et fixé la carte, le pont en H, l'alimentation, la bout de la manette, on a fait du cable management et il reste plus qu'à fixer la batterie (auquel on a ajouté des scratches), la caméra (qu'on a testé et qui marche) et la lampe.
+
+![https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/explobot_cameraservo.jpg](https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/explobot_cameraservo.jpg)
