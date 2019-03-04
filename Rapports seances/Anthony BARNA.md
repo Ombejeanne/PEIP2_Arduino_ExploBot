@@ -100,3 +100,15 @@ Cela donne des informations, notamment sur la manière dont sont transmis les pa
 * Voici une courte [vidéo](https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FKJUN-Gob8qw%3Ffbclid%3DIwAR1eGpQI2xFTQnhV1hlKM3nVFsLNu5_y9kutA6KZit-YHbofoGitM4g1mTw&h=AT2WfpAzhRxiHpDFNaCvjarttAML4TCD_0FxaemhZ1p-elKtKIgg1dm8Zp7bAd5aKo6JU0BSAc7wL_DCew_vSds-qBg9rdrCWuCCYfXlStw5wVy5HbCvTjzUn4ci0A) qui montre l'avancement (le montage reste expérimental). 
 
 * Il reste maintenant à finir de monter proprement les câbles et à créer les supports pour les différentes pièces (les cartes électroniques ne doivent pas avoir de contact direct avec le chassis pour éviter les courts circuits, un support pour le servomoteur, la caméra et la LED haute puissance qui sera de préférence en PVC).
+
+## Compte rendu séance du 4 mars 2019
+
+* Nous découpons et fixons le support final de l'ExploBot où sont fixés tous les autres composants.
+
+* Nous mettons l'ExploBot sur batterie pour plus d'autonomie.
+
+* Nous aménageons les câbles au mieux.
+
+* Nous avons fait fonctionner la caméra IP, les images sont réceptionnées sur mon smartphone.
+
+* Voici une courte [vidéo](https://youtu.be/Llfrzw-GikU) qui montre l'avancement du projet : 
