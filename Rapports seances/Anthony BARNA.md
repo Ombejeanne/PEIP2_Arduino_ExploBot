@@ -103,7 +103,7 @@ Cela donne des informations, notamment sur la manière dont sont transmis les pa
 
 ## Compte rendu séance du 4 mars 2019
 
-* Nous découpons et fixons le support final de l'ExploBot où sont fixés tous les autres composants.
+* Nous découpons le support final de l'ExploBot où sont fixés tous les autres composants.
 
 * Nous mettons l'ExploBot sur batterie pour plus d'autonomie.
 
@@ -111,4 +111,4 @@ Cela donne des informations, notamment sur la manière dont sont transmis les pa
 
 * Nous avons fait fonctionner la caméra IP, les images sont réceptionnées sur mon smartphone.
 
-* Voici une courte [vidéo](https://youtu.be/Llfrzw-GikU) qui montre l'avancement du projet : 
+* Voici une courte [vidéo](https://www.youtube.com/watch?v=LIfrzw-GikU&feature=youtu.be&fbclid=IwAR3O4x7sBNFd8-eW2pAYYs-ogMijJUipWTcTzrmkwpaRxoFlRogaWghWUJg) qui montre l'avancement du projet : 
