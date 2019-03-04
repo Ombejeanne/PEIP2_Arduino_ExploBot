@@ -112,3 +112,5 @@ https://www.ebay.fr/itm/A-FAIRE-SOI-MEME-RC-Smart-Robot-Tank-Sur-chenilles-Car-C
 * On a remplacé la carte pour une UNO et fixé la carte, le pont en H, l'alimentation, la bout de la manette, on a fait du cable management et il reste plus qu'à fixer la batterie (auquel on a ajouté des scratches), la caméra (qu'on a testé et qui marche) et la lampe.
 
 ![https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/explobot_cameraservo.jpg](https://github.com/MicheleBona/PEIP2_Arduino_ExploBot/blob/master/documents/images/explobot_cameraservo.jpg)
+
+* L'explobot est maintenant operationel et presque complet, on ajoutera les details manquant et les finitions dans la semaine...
