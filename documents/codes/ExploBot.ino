@@ -85,8 +85,7 @@ void setup(){
 
   else if(error == 3)
     Serial.println("Controller refusing to enter Pressures mode, may not support it. ");
-  
-//  Serial.print(ps2x.Analog(1), HEX);
+
   
   type = ps2x.readType(); 
   switch(type) {
@@ -125,11 +124,11 @@ void loop() {
     vitesseB=map(ps2x.Analog(PSS_RY),128,0,0,255);
   }
   else{ //si on est en marche arrière
-    //A arrière
+    //moteur A arrière
     digitalWrite(IN1,LOW);
     digitalWrite(IN2,HIGH);
 
-    //B arrière
+    //moteur B arrière
     digitalWrite(IN3,HIGH);
     digitalWrite(IN4,LOW);
 
@@ -150,43 +149,33 @@ void loop() {
     
     vitesseB-=map(ps2x.Analog(PSS_LX),128,255,0,255);
     
-    if(vitesseB<0){ //la vitesse doit rester à minimum 0
+    if(vitesseB<0){ //la vitesse doit rester au minimum à 0
       vitesseB=0;
     }
   }
   
   analogWrite(ENA, vitesseA); 
   analogWrite(ENB, vitesseB);
-
-  Serial.print("IN1: ");
-  Serial.println(digitalRead(IN1));
-  Serial.print("IN2: ");
-  Serial.println(digitalRead(IN2));
-
-  Serial.print("IN3: ");
-  Serial.println(digitalRead(14));
-  Serial.print("IN4: ");
-  Serial.println(digitalRead(15));
   
-  if(error == 1) //skip loop if no controller found
+  if(error == 1) //on passe la boucle si aucune manetyte n'est trouvée
     return; 
   else { //DualShock Controller
-    ps2x.read_gamepad(false, vibrate); //read controller and set large motor to spin at 'vibrate' speed   
+    ps2x.read_gamepad(false, vibrate); //read controller and set large motor to spin at 'vibrate' speed --> on n'utilise pas le vibreur ici   
 
-    if(ps2x.Button(PSB_PAD_UP)) {      //will be TRUE as long as button is pressed
+    if(ps2x.Button(PSB_PAD_UP)) {     
 
       angle=90; //on remet le servo à sa position initiale
     }
     if(ps2x.Button(PSB_PAD_RIGHT)){ //augmenter l'angle du servo
       
-      angle+=10;
+      angle-=10;
     }
     if(ps2x.Button(PSB_PAD_LEFT)){//baisser l'angle du servo
       
-      angle-=10;
+      angle+=10;
     }
 
-    //pour rester avec un angle coimpris entre 0 et 180
+    //pour rester avec un angle compris entre 0 et 180
     if(angle<0){
       angle=0;
     }
@@ -207,17 +196,6 @@ void loop() {
           digitalWrite(lampe,LOW);
           light=false;
         }
-    }     
-
-    if(ps2x.Button(PSB_L1) || ps2x.Button(PSB_R1)) { //print stick values if either is TRUE
-      Serial.print("Stick Values:");
-      Serial.print(ps2x.Analog(PSS_LY), DEC); //Left stick, Y axis. Other options: LX, RY, RX  
-      Serial.print(",");
-      Serial.print(ps2x.Analog(PSS_LX), DEC); 
-      Serial.print(",");
-      Serial.print(ps2x.Analog(PSS_RY), DEC); 
-      Serial.print(",");
-      Serial.println(ps2x.Analog(PSS_RX), DEC); 
     }     
   }
   delay(50);  
