@@ -17,7 +17,7 @@
 
 ![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/LED%20HP%203W.PNG)
 
-## Moteurs JGO 25 370
+## Moteurs JGA 25 370
 
 ![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/moteur%20jga%2025%20370.PNG)
 
