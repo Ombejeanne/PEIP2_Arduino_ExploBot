@@ -1,5 +1,9 @@
 # Caractéristiques des composants utilisés 
 
+## Arduino UNO R3
+
+![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/Arduino%20UNO%20R3%20specs.PNG)
+
 ## Servomoteur Tower Pro MG 996R
 
 ![alt text](https://raw.githubusercontent.com/MicheleBona/PEIP2_Arduino_ExploBot/master/documents/images/Tower%20Pro%20MG%20996%20r.PNG)
